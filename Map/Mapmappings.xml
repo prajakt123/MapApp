@@ -5,7 +5,6 @@
         <component type="textbox2" id="txtAPIKey" displayname="TextBox2"/>
     </container>
     <container type="form" id="frmDetails" displayname="Form"/>
-    <container type="form" id="frmDirection" displayname="Form"/>
     <container type="form" id="frmHome" displayname="Form"/>
     <container type="form" id="frmMap" displayname="Form">
         <component type="map" id="mapAtms" displayname="Map">

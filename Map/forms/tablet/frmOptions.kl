@@ -3633,8 +3633,8 @@
                 </desktop_web>
                 <desktop_web_override>false</desktop_web_override>
                 <ipad>
-                    <left>20</left>
-                    <right>20</right>
+                    <left>30</left>
+                    <right>30</right>
                     <top>25</top>
                     <bottom>1</bottom>
                     <unit>%</unit>
@@ -5598,7 +5598,7 @@
                     <width>82</width>
                     <height>100</height>
                 </sizePercent>
-                <skinId>Skin Defaults</skinId>
+                <skinId>sknSwtch</skinId>
                 <focusSkinId>Skin Defaults</focusSkinId>
                 <localeId>None</localeId>
                 <visible>true</visible>
@@ -6202,7 +6202,7 @@
                             <functionNameMap>
                                 <entry>
                                     <key>js</key>
-                                    <value>openNow</value>
+                                    <value>openNowCall</value>
                                 </entry>
                             </functionNameMap>
                             <paramDataMap>

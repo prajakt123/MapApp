@@ -7,12 +7,11 @@
 ******************************************************************/
 function checkStorage(key1)
 {
-	key = kony.store.getItem(key1);
 	tmp=0;
 	tmp1=0;
+	key = kony.store.getItem(key1);
 	if(key==null)
 	{
-		//check if the key is stored in the device.
 		frmAPIKey.show();
 	}
 	else
@@ -36,7 +35,7 @@ function saveKey()
 	else
 		tmp=0;
 }
-function openNow()
+function openNowCall()
 {
 	if(tmp1==0)
 		tmp1=1;
@@ -99,11 +98,12 @@ function successcallback(position)
 	if(radius==""||radius==null)
 		radius="5000";
 	if(tmp1==0)
-		openNow=" ";
+		openNow="";
 	else
-		openNow=true;
+		openNow=true;	
 	atmUrl="https://maps.googleapis.com/maps/api/place/nearbysearch/json?location="+latitude+","+longitude+"&radius="+radius+"&types=atm&openNow="+openNow+"&sensor=false&key="+key;
 	//atmUrl="https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&types=atm&sensor=false&key=AIzaSyDg1m_croyAxo67tRJSEEClBIwDUM_qUio";
+	kony.print("#####################"+atmUrl);
 	try
     {
 	   var myhttpheaders={authkey:"myauthkey", authtoken:"myauthtoken"};
@@ -208,15 +208,14 @@ function onPinClickCallBack(locations)
 ******************************************************************/
 function getDirection()
 {
-		/*var targetLat = glbCurLocation["lat"].toString();
-		var targetLng = glbCurLocation["lon"].toString();*/
-		//var url="https://maps.google.com/maps?saddr="+latitude+","+longitude+"&daddr="+targetLat+","+targetLng;
-		frmDirection.brwsrDirection.url="https://maps.google.com/maps?saddr="+latitude+","+longitude+"&daddr="+targetLat+","+targetLng;
-		//popUpDetails.dismiss();
-		frmDirection.show();
-		
-		
-		//kony.application.openURL(url);
+		/*frmDirection.brwsrDirection.url="https://maps.google.com/maps?saddr="+latitude+","+longitude+"&daddr="+targetLat+","+targetLng;
+		frmDirection.show();*/
+		var drctnUrl;
+		if(kony.os.deviceInfo().name=="iPhone"||kony.os.deviceInfo().name=="iPad")
+			drctnUrl="https://maps.apple.com?saddr="+latitude+","+longitude+"&daddr="+targetLat+","+targetLng;
+		else
+			drctnUrl="https://maps.google.com/maps?saddr="+latitude+","+longitude+"&daddr="+targetLat+","+targetLng;
+		kony.application.openURL(drctnUrl);
 }
 /*****************************************************************
 * Name    : setViewMode

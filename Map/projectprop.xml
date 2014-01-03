@@ -1,6 +1,6 @@
 <properties>
     <attributes name="applogokey" value="0=icon.png,1=,8=,2=,46=,42=,3=,16=,18=,43=,1000=,1001=,1002=,21="/>
-    <attributes name="androidmapkey2" value="AIzaSyBwujYc1iJI2GzpZp0I_RVCrjkaLzU1pu0"/>
+    <attributes name="androidmapkey2" value="AIzaSyCde_q2PTm74I2xYOBoCc-SZSIbmaEurDo"/>
     <attributes name="ACCESS_WIFI_STATE" value="true"/>
     <attributes name="mwaddrkey" value=""/>
     <attributes name="portkey" value=""/>
@@ -57,7 +57,7 @@
     <attributes name="wp8packageauthorkey" value=""/>
     <attributes name="READ_HISTORY_BOOKMARKS" value="false"/>
     <attributes name="WP8_ID_CAP_VOIP" value="true"/>
-    <attributes name="androidmapkey" value="AIzaSyBwujYc1iJI2GzpZp0I_RVCrjkaLzU1pu0"/>
+    <attributes name="androidmapkey" value=""/>
     <attributes name="enablesearchbar" value="false"/>
     <attributes name="wp8descriptionkey" value="Sample Test Application"/>
     <attributes name="BROADCAST_STICKY" value="false"/>
@@ -95,7 +95,7 @@
     <attributes name="bb10keystorepassword" value=""/>
     <attributes name="pathpatternkey" value=""/>
     <attributes name="wp8iconicsmallkey" value=""/>
-    <attributes name="splashlogokey" value="0=splash.9.png,1=iphone_5.png,8=galaxynexus.png,2=,46=,42=,3=,16=,18=,43=,1000=,1001=,1002=,31=,32=,45=,22=,23=,24=,35=,44=,36=,21=,37="/>
+    <attributes name="splashlogokey" value="0=splash.9.png,1=iphone_5.png,8=splash.9.png,2=,46=,42=,3=,16=,18=,43=,1000=,1001=,1002=,31=,32=,45=,22=,23=,24=,35=,44=,36=,21=,37="/>
     <attributes name="Shared_User_Certificates" value="true"/>
     <attributes name="inputaccessoryviewtype" value="nextprevtoolbar"/>
     <attributes name="android_allowselfsignedcertificates" value="None"/>
@@ -130,7 +130,7 @@
     <attributes name="schemekey" value=""/>
     <attributes name="win8versionmajorkey" value="1"/>
     <attributes name="win8lockscreennotificationskey" value="not set"/>
-    <attributes name="andapplicationtags" value=""/>
+    <attributes name="andapplicationtags" value="&lt;meta-data android:name=&quot;com.google.android.gms.version&quot; android:value=&quot;@integer/google_play_services_version&quot; /&gt;"/>
     <attributes name="exceptionalert" value="true"/>
     <attributes name="wp8cycle8key" value=""/>
     <attributes name="xhtmlfavicokey" value=""/>
@@ -208,7 +208,7 @@
     <attributes name="tcphoneformatindicator" value="false"/>
     <attributes name="Location" value="true"/>
     <attributes name="ACCESS_SURFACE_FLINGER" value="false"/>
-    <attributes name="currentgaversion" value="5.5.39.QA_v201312161549"/>
+    <attributes name="currentgaversion" value="5.5.39.QA_v201312301746_r3"/>
     <attributes name="mwhttpsportkey" value=""/>
     <attributes name="pathkey" value=""/>
     <attributes name="vendornamekey" value="KonyLabs"/>
