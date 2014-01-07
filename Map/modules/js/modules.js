@@ -1,5 +1,3 @@
-//if the key is stored in the device db then navigate user to frmOptions.
-//else 	navigate user to  frmAPIKey if no key is stored in the device.
 /*****************************************************************
 * Name    : checkStorage
 * Author  : Kony 
@@ -76,7 +74,6 @@ function errorcallback(positionerror)
 {
 	kony.print("in error callback of getCurrentPosition");
 	kony.application.dismissLoadingScreen();
-	alert("in error callback");
 	var errorMesg = "Error code: " + positionerror.code;
 	errorMesg = errorMesg  + " message: " + positionerror.message
 	alert(errorMesg);
@@ -108,7 +105,7 @@ function successcallback(position)
     {
 	   var myhttpheaders={authkey:"myauthkey", authtoken:"myauthtoken"};
 	   var inputParamTable={};
-	   if(kony.os.deviceInfo().name=="iPhone"|| kony.os.deviceInfo().name=="iPad")
+	   if(kony.os.deviceInfo().name=="iPhone"|| kony.os.deviceInfo().name=="iPad"||kony.os.deviceInfo().name=="thinclient")
 	  	inputParamTable={appID:"Map",serviceID:"accountLogin",channel:"rc",httpheaders:myhttpheaders};
 		else
 		{
@@ -148,14 +145,14 @@ function callbackfunction(status, resulttable)
     					"image":"atm.png",
     					"name":resulttable["results"][i]["name"].toString(),
     					"desc":resulttable["results"][i]["vicinity"].toString(),
-    					"calloutData": {"key1":resulttable["results"][i]["name"].toString(),"key2":resulttable["results"][i]["vicinity"].toString()},
-    					"showcallout":false};
+    					//"calloutData": {"key1":resulttable["results"][i]["name"].toString(),"key2":resulttable["results"][i]["vicinity"].toString()},
+    					"showcallout":true};
     		locationList.push(location);
     	}
     	var location=new Object();
-    	location={"lat":latitude.toString(),"lon":longitude.toString(),"image":"pin.png","name":"current position","desc":" ","showcallout":false};
+    	location={"lat":latitude.toString(),"lon":longitude.toString(),"image":"pin.png","name":"current position","desc":" ","showcallout":true};
     	locationList.push(location);
-    	frmMap.mapAtms.widgetDataMapForCallout={lblName:"key1",lblAddress:"key2"};
+    	//frmMap.mapAtms.widgetDataMapForCallout={lblName:"key1",lblAddress:"key2"};
     	frmMap.mapAtms.locationData=locationList;
     	kony.application.dismissLoadingScreen();
     	frmMap.show();
@@ -176,7 +173,6 @@ function getAtms()
 	}catch(err)
 	{
 		kony.application.dismissLoadingScreen();
-		//alert("api error");
 		alert(err.message);
 	}
 }
@@ -185,21 +181,14 @@ function getAtms()
 * Author  : Kony 
 * Purpose : The below function is the call back of onPinClick event of map,used to display current location details .
 ******************************************************************/
-function onPinClickCallBack(locations)
+function onSelectionCallBack(locations)
 {
-	//var parentTable =[];
 	targetLat=locations["lat"].toString();
 	targetLng=locations["lon"].toString();
-	//kony.print(targetLat+":"+targetLat);
+	kony.print("targetLat:"+targetLat+"targetLng:"+targetLng);
 	frmDetails.lblAtmName.text=locations["name"].toString();
 	frmDetails.lblAtmAddress.text=locations["desc"].toString();
 	frmDetails.show();
-	/*popUpDetails.lblName.text = locations["name"].toString();
-	popUpDetails.lblDetails.text = locations["desc"].toString();
-	parentTable["widget"] = eventObj;
-	parentTable["anchor"] = "top";
-	popUpDetails.setContext(parentTable);
-	popUpDetails.show();*/
 }
 /*****************************************************************
 * Name    : getDirection
@@ -208,8 +197,6 @@ function onPinClickCallBack(locations)
 ******************************************************************/
 function getDirection()
 {
-		/*frmDirection.brwsrDirection.url="https://maps.google.com/maps?saddr="+latitude+","+longitude+"&daddr="+targetLat+","+targetLng;
-		frmDirection.show();*/
 		var drctnUrl;
 		if(kony.os.deviceInfo().name=="iPhone"||kony.os.deviceInfo().name=="iPad")
 			drctnUrl="https://maps.apple.com?saddr="+latitude+","+longitude+"&daddr="+targetLat+","+targetLng;
@@ -240,13 +227,6 @@ function setViewMode(radio)
 ******************************************************************/
 function sliderCallBack(event)
 {
-	frmMap.mapAtms.zoomLevel=event.selectedValue;
+	//if(kony.os.deviceInfo().name=="iPhone"||kony.os.deviceInfo().name=="iPad")
+		frmMap.mapAtms.zoomLevel=event.selectedValue;
 }
-
-/*function showPopUp(eventObj){
-	var parentTable = [];
-	parentTable["widget"] = eventObj;
-	parentTable["anchor"] = "bottom";
-	viewSelector.setContext(parentTable);
-	viewSelector.show();
-}*/

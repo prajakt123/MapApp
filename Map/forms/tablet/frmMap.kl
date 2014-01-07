@@ -6780,7 +6780,7 @@
                 <height>false</height>
             </overridePerferred>
             <contentAlign>4</contentAlign>
-            <on_pinSelect>
+            <event_onClick>
                 <evtSequence>
                     <actionList xsi:type="eventFunctionAction">
                         <enabled>true</enabled>
@@ -6790,18 +6790,14 @@
                         <functionNameMap>
                             <entry>
                                 <key>js</key>
-                                <value>onPinClickCallBack</value>
-                            </entry>
-                            <entry>
-                                <key>lua</key>
-                                <value>None</value>
+                                <value>onSelectionCallBack</value>
                             </entry>
                         </functionNameMap>
                         <paramData>
                             <datatype>string</datatype>
                             <paramName>locations</paramName>
                             <valType>0</valType>
-                            <value></value>
+                            <value>location</value>
                             <valueMap>
                                 <entry>
                                     <key>js</key>
@@ -6817,24 +6813,7 @@
                                         <datatype>string</datatype>
                                         <paramName>locations</paramName>
                                         <valType>0</valType>
-                                        <value></value>
-                                        <valueMap>
-                                            <entry>
-                                                <key>js</key>
-                                                <value>location</value>
-                                            </entry>
-                                        </valueMap>
-                                    </paramList>
-                                </value>
-                            </entry>
-                            <entry>
-                                <key>lua</key>
-                                <value>
-                                    <paramList>
-                                        <datatype>string</datatype>
-                                        <paramName>locations</paramName>
-                                        <valType>0</valType>
-                                        <value></value>
+                                        <value>location</value>
                                         <valueMap>
                                             <entry>
                                                 <key>js</key>
@@ -6846,6 +6825,12 @@
                             </entry>
                         </paramDataMap>
                     </actionList>
+                    <enabled>true</enabled>
+                    <seqname></seqname>
+                </evtSequence>
+            </event_onClick>
+            <on_pinSelect>
+                <evtSequence>
                     <enabled>true</enabled>
                     <seqname></seqname>
                 </evtSequence>
@@ -7046,7 +7031,7 @@
             <winphone7_zoomlevel>0</winphone7_zoomlevel>
             <winphone8_zoomlevel>0</winphone8_zoomlevel>
             <windows8_zoomlevel>2</windows8_zoomlevel>
-            <calloutWidth>80</calloutWidth>
+            <calloutWidth>100</calloutWidth>
         </children>
         <overrideProperties>KForm.androidtitleBar</overrideProperties>
         <overrideProperties>KForm.ipadtitleBar</overrideProperties>

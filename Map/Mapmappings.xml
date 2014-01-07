@@ -14,6 +14,7 @@
     <container type="form" id="frmOptions" displayname="Form">
         <component type="textbox2" id="txtDistance" displayname="TextBox2"/>
     </container>
+    <container type="dialog" id="popUpAPIKey" displayname="Popup"/>
     <container type="dialog" id="viewSelector" displayname="Popup"/>
     <globalsequences/>
     <skins/>

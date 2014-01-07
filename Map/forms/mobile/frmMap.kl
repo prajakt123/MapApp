@@ -5402,7 +5402,7 @@
                     <bb10_contentalignment>0</bb10_contentalignment>
                 </children>
                 <children xsi:type="kSlider">
-                    <ID>sliderZoom</ID>
+                    <ID>sldrZoom</ID>
                     <gridMetaData>
                         <colSpan>1</colSpan>
                         <column>0</column>
@@ -5414,19 +5414,19 @@
                         <verticalAlignment>0</verticalAlignment>
                         <verticalFill>1</verticalFill>
                     </gridMetaData>
-                    <widgetID>p2kwiet237135440426</widgetID>
+                    <widgetID>p2kwiet158737729714949</widgetID>
                     <createdGAVersion>5.5.0</createdGAVersion>
                     <location>
                         <x>1</x>
-                        <y>26</y>
+                        <y>21</y>
                     </location>
                     <size>
                         <width>444</width>
-                        <height>9</height>
+                        <height>22</height>
                     </size>
                     <sizePercent>
                         <width>100</width>
-                        <height>22</height>
+                        <height>54</height>
                     </sizePercent>
                     <skinId>Skin Defaults</skinId>
                     <focusSkinId>Skin Defaults</focusSkinId>
@@ -5435,11 +5435,11 @@
                     <rendererData>
                         <desktop_kiosk_channel>true</desktop_kiosk_channel>
                         <desktop_web_channel>true</desktop_web_channel>
-                        <mixed_android>false</mixed_android>
+                        <mixed_android>true</mixed_android>
                         <mixed_android_tab>true</mixed_android_tab>
-                        <mixed_bb>false</mixed_bb>
+                        <mixed_bb>true</mixed_bb>
                         <mixed_ipad>true</mixed_ipad>
-                        <mixed_iphone>false</mixed_iphone>
+                        <mixed_iphone>true</mixed_iphone>
                         <rc_android>true</rc_android>
                         <rc_android_tab>true</rc_android_tab>
                         <rc_blackberry>true</rc_blackberry>
@@ -5447,16 +5447,16 @@
                         <rc_ipad>true</rc_ipad>
                         <rc_iphone>true</rc_iphone>
                         <rc_j2me>true</rc_j2me>
-                        <rc_palm>false</rc_palm>
-                        <rc_symbian>false</rc_symbian>
+                        <rc_palm>true</rc_palm>
+                        <rc_symbian>true</rc_symbian>
                         <rc_windows8>true</rc_windows8>
                         <rc_winmobile>true</rc_winmobile>
-                        <rc_winmobile6x>false</rc_winmobile6x>
+                        <rc_winmobile6x>true</rc_winmobile6x>
                         <rc_winphone8>true</rc_winphone8>
                         <tabspa_ipad>true</tabspa_ipad>
                         <tabspa_windows>true</tabspa_windows>
                         <tabspaspa_android>true</tabspaspa_android>
-                        <tc_spaandroid>false</tc_spaandroid>
+                        <tc_spaandroid>true</tc_spaandroid>
                         <tc_spabb>true</tc_spabb>
                         <tc_spabb_nth>true</tc_spabb_nth>
                         <tc_spaiphone>true</tc_spaiphone>
@@ -5469,9 +5469,9 @@
                         <tc_xhtml_advnth>true</tc_xhtml_advnth>
                         <tc_xhtml_advpalm1>true</tc_xhtml_advpalm1>
                         <tc_xhtml_js>true</tc_xhtml_js>
-                        <wrapper_android>false</wrapper_android>
+                        <wrapper_android>true</wrapper_android>
                         <wrapper_android_tab>true</wrapper_android_tab>
-                        <wrapper_bb>false</wrapper_bb>
+                        <wrapper_bb>true</wrapper_bb>
                         <wrapper_ipad>true</wrapper_ipad>
                         <wrapper_iphone>true</wrapper_iphone>
                     </rendererData>
@@ -5483,7 +5483,7 @@
                             <bottom>0</bottom>
                             <unit>%</unit>
                         </android>
-                        <android_override>false</android_override>
+                        <android_override>true</android_override>
                         <bb>
                             <left>0</left>
                             <right>0</right>
@@ -6068,21 +6068,19 @@
                             <seqname></seqname>
                         </evtSequence>
                     </event_onSlide>
-                    <parent_LeftSkin>sliderLeft</parent_LeftSkin>
-                    <parent_RightSkin>sliderRight</parent_RightSkin>
+                    <parent_LeftSkin>Skin Defaults</parent_LeftSkin>
+                    <parent_RightSkin>Skin Defaults</parent_RightSkin>
                     <parent_ThumbImg></parent_ThumbImg>
                     <parent_FocusThumbImg></parent_FocusThumbImg>
-                    <overrideProperties>KSlider.androidLeftSkin</overrideProperties>
-                    <overrideProperties>KSlider.androidRightSkin</overrideProperties>
-                    <overrideProperties>KSlider.iphoneLeftSkin</overrideProperties>
-                    <overrideProperties>KSlider.iphoneRightSkin</overrideProperties>
+                    <overrideProperties>KSlider.androidMaxSkin</overrideProperties>
+                    <overrideProperties>KSlider.androidMinSkin</overrideProperties>
                     <parentThickness></parentThickness>
-                    <parentMinLabel></parentMinLabel>
-                    <parentMaxLabel></parentMaxLabel>
-                    <parentMinSkin></parentMinSkin>
-                    <parentMaxSkin></parentMaxSkin>
-                    <iphoneLeftSkin>sliderLeft</iphoneLeftSkin>
-                    <iphoneRightSkin>sliderRight</iphoneRightSkin>
+                    <parentMinLabel>0</parentMinLabel>
+                    <parentMaxLabel>28</parentMaxLabel>
+                    <parentMinSkin>sliderLeft</parentMinSkin>
+                    <parentMaxSkin>sliderRight</parentMaxSkin>
+                    <iphoneLeftSkin>Skin Defaults</iphoneLeftSkin>
+                    <iphoneRightSkin>Skin Defaults</iphoneRightSkin>
                     <iphoneThumbImg></iphoneThumbImg>
                     <iphoneFocusThumbImg></iphoneFocusThumbImg>
                     <iphoneMinImg></iphoneMinImg>
@@ -6099,15 +6097,15 @@
                     <bbFocusThumbImg></bbFocusThumbImg>
                     <bbThickness></bbThickness>
                     <tooltip></tooltip>
-                    <androidLeftSkin>sliderLeft</androidLeftSkin>
-                    <androidRightSkin>sliderRight</androidRightSkin>
+                    <androidLeftSkin>Skin Defaults</androidLeftSkin>
+                    <androidRightSkin>Skin Defaults</androidRightSkin>
                     <androidThumbImg></androidThumbImg>
                     <androidFocusThumbImg></androidFocusThumbImg>
                     <androidThickness></androidThickness>
                     <androidMinLabel></androidMinLabel>
                     <androidMaxLabel></androidMaxLabel>
-                    <androidMinSkin>Skin Defaults</androidMinSkin>
-                    <androidMaxSkin>Skin Defaults</androidMaxSkin>
+                    <androidMinSkin>sliderLeft</androidMinSkin>
+                    <androidMaxSkin>sliderRight</androidMaxSkin>
                     <winMobLeftSkin>Skin Defaults</winMobLeftSkin>
                     <winMobRightSkin>Skin Defaults</winMobRightSkin>
                     <winMobThumbImg></winMobThumbImg>
@@ -6778,7 +6776,7 @@
                 <height>false</height>
             </overridePerferred>
             <contentAlign>4</contentAlign>
-            <on_pinSelect>
+            <event_onClick>
                 <evtSequence>
                     <actionList xsi:type="eventFunctionAction">
                         <enabled>true</enabled>
@@ -6788,18 +6786,14 @@
                         <functionNameMap>
                             <entry>
                                 <key>js</key>
-                                <value>onPinClickCallBack</value>
-                            </entry>
-                            <entry>
-                                <key>lua</key>
-                                <value>None</value>
+                                <value>onSelectionCallBack</value>
                             </entry>
                         </functionNameMap>
                         <paramData>
                             <datatype>string</datatype>
                             <paramName>locations</paramName>
                             <valType>0</valType>
-                            <value></value>
+                            <value>location</value>
                             <valueMap>
                                 <entry>
                                     <key>js</key>
@@ -6815,24 +6809,7 @@
                                         <datatype>string</datatype>
                                         <paramName>locations</paramName>
                                         <valType>0</valType>
-                                        <value></value>
-                                        <valueMap>
-                                            <entry>
-                                                <key>js</key>
-                                                <value>location</value>
-                                            </entry>
-                                        </valueMap>
-                                    </paramList>
-                                </value>
-                            </entry>
-                            <entry>
-                                <key>lua</key>
-                                <value>
-                                    <paramList>
-                                        <datatype>string</datatype>
-                                        <paramName>locations</paramName>
-                                        <valType>0</valType>
-                                        <value></value>
+                                        <value>location</value>
                                         <valueMap>
                                             <entry>
                                                 <key>js</key>
@@ -6844,6 +6821,12 @@
                             </entry>
                         </paramDataMap>
                     </actionList>
+                    <enabled>true</enabled>
+                    <seqname></seqname>
+                </evtSequence>
+            </event_onClick>
+            <on_pinSelect>
+                <evtSequence>
                     <enabled>true</enabled>
                     <seqname></seqname>
                 </evtSequence>
