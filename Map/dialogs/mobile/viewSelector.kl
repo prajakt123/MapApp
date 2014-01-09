@@ -447,7 +447,7 @@
         <orientation>1</orientation>
         <display_orientation>portrait</display_orientation>
         <itemSkinId>Skin Defaults</itemSkinId>
-        <itemFocusSkinId>Skin Defaults</itemFocusSkinId>
+        <itemFocusSkinId>sknPopupKonyThemeNormal</itemFocusSkinId>
         <parentOnLoadJS></parentOnLoadJS>
         <parentUnLoadJS></parentUnLoadJS>
         <parentMenuPosition>FORM_MENU_POSITION_AFTER_APPMENU</parentMenuPosition>

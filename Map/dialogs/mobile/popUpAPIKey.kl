@@ -59,7 +59,7 @@
             <width>100</width>
             <height>100</height>
         </sizePercent>
-        <skinId>No Skin</skinId>
+        <skinId>sknPopupInfo</skinId>
         <focusSkinId>Skin Defaults</focusSkinId>
         <localeId>None</localeId>
         <visible>true</visible>
@@ -447,7 +447,7 @@
         <orientation>1</orientation>
         <display_orientation>portrait</display_orientation>
         <itemSkinId>Skin Defaults</itemSkinId>
-        <itemFocusSkinId>No Skin</itemFocusSkinId>
+        <itemFocusSkinId>sknPopupInfo</itemFocusSkinId>
         <parentOnLoadJS></parentOnLoadJS>
         <parentUnLoadJS></parentUnLoadJS>
         <parentMenuPosition>FORM_MENU_POSITION_AFTER_APPMENU</parentMenuPosition>
@@ -2657,7 +2657,7 @@
                         </xhtmlNormal>
                         <xhtmlNormal_override>false</xhtmlNormal_override>
                     </paddings>
-                    <SText>Login with code.google.com/apis/console/ credentials to get your API key.If you do not have account, Create an account to get the key.</SText>
+                    <SText>Login to code.google.com/apis/console/ with credentials to get your API key.If you do not have account, Create an account to get the key.</SText>
                     <overridePerferred>
                         <width>true</width>
                         <height>false</height>

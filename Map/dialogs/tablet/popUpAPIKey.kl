@@ -59,7 +59,7 @@
             <width>100</width>
             <height>100</height>
         </sizePercent>
-        <skinId>sknPopupKonyThemeNormal</skinId>
+        <skinId>sknPopupInfo</skinId>
         <focusSkinId>Skin Defaults</focusSkinId>
         <localeId>None</localeId>
         <visible>true</visible>
@@ -447,7 +447,7 @@
         <orientation>1</orientation>
         <display_orientation>portrait</display_orientation>
         <itemSkinId>Skin Defaults</itemSkinId>
-        <itemFocusSkinId>sknPopupKonyThemeNormal</itemFocusSkinId>
+        <itemFocusSkinId>sknPopupInfo</itemFocusSkinId>
         <parentOnLoadJS></parentOnLoadJS>
         <parentUnLoadJS></parentUnLoadJS>
         <parentMenuPosition>FORM_MENU_POSITION_AFTER_APPMENU</parentMenuPosition>
@@ -2657,7 +2657,7 @@
                         </xhtmlNormal>
                         <xhtmlNormal_override>false</xhtmlNormal_override>
                     </paddings>
-                    <SText>Login with code.google.com/apis/console/ credentials to get your API key.If you do not have account, Create an account to get the key.</SText>
+                    <SText>Login to code.google.com/apis/console/  with credentials to get your API key.If you do not have account, Create an account to get the key.</SText>
                     <overridePerferred>
                         <width>true</width>
                         <height>false</height>
@@ -3523,13 +3523,13 @@
                         </symbian>
                         <symbian_override>true</symbian_override>
                         <tabRCAndroid>
-                            <left>0</left>
-                            <right>0</right>
-                            <top>0</top>
-                            <bottom>0</bottom>
+                            <left>20</left>
+                            <right>20</right>
+                            <top>2</top>
+                            <bottom>2</bottom>
                             <unit>%</unit>
                         </tabRCAndroid>
-                        <tablet_rc_android_override>false</tablet_rc_android_override>
+                        <tablet_rc_android_override>true</tablet_rc_android_override>
                         <tabspaAndroid>
                             <left>0</left>
                             <right>0</right>
@@ -3734,11 +3734,11 @@
                         <ipad>
                             <left>0</left>
                             <right>0</right>
-                            <top>0</top>
-                            <bottom>0</bottom>
+                            <top>1</top>
+                            <bottom>1</bottom>
                             <unit>%</unit>
                         </ipad>
-                        <ipad_override>false</ipad_override>
+                        <ipad_override>true</ipad_override>
                         <iphonerc>
                             <left>0</left>
                             <right>0</right>
@@ -3792,11 +3792,11 @@
                         <tabRCAndroid>
                             <left>0</left>
                             <right>0</right>
-                            <top>0</top>
-                            <bottom>0</bottom>
+                            <top>1</top>
+                            <bottom>1</bottom>
                             <unit>%</unit>
                         </tabRCAndroid>
-                        <tablet_rc_android_override>false</tablet_rc_android_override>
+                        <tablet_rc_android_override>true</tablet_rc_android_override>
                         <tabspaAndroid>
                             <left>0</left>
                             <right>0</right>

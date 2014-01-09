@@ -9,7 +9,7 @@
     <pluginInfo plugin-name="Kony Studio Licensing" version-no="5.5.0.Beta4_v201311141401"/>
     <pluginInfo plugin-name="CloudMiddlewarePlugin" plugin-id="com.kony.cloudmiddleware.Activator" version-no="5.5.20.QA_v201312241239"/>
     <pluginInfo plugin-name="CloudThirdPartyPlugin" plugin-id="com.kony.cloudthirdparty.Activator" version-no="5.5.20.QA_v201312241239"/>
-    <pluginInfo plugin-name="Visualizer Integration Plugin" plugin-id="com.viz.ide.VisualiserIDEPlugin" version-no="5.5.19.QA_v201312201639_r1"/>
+    <pluginInfo plugin-name="Visualizer Integration Plugin" plugin-id="com.viz.ide.VisualiserIDEPlugin" version-no="5.5.20.QA_v201401060949"/>
     <pluginInfo plugin-name="Tablet Android" plugin-id="com.pat.android.Activator" version-no="5.5.30.QA_v201312161551"/>
     <pluginInfo plugin-name="Blackberry &amp; J2ME" plugin-id="com.pat.j2me.J2MEPlugin" version-no="5.5.19.QA_v201312182047"/>
     <pluginInfo plugin-name="Blackberry 10" plugin-id="com.kony.bb10.BB10Plugin" version-no="5.5.10.QA"/>

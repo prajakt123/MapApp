@@ -447,7 +447,7 @@
         <orientation>1</orientation>
         <display_orientation>portrait</display_orientation>
         <itemSkinId>Skin Defaults</itemSkinId>
-        <itemFocusSkinId>Skin Defaults</itemFocusSkinId>
+        <itemFocusSkinId>sknPopupKonyThemeNormal</itemFocusSkinId>
         <parentOnLoadJS></parentOnLoadJS>
         <parentUnLoadJS></parentUnLoadJS>
         <parentMenuPosition>FORM_MENU_POSITION_AFTER_APPMENU</parentMenuPosition>
@@ -957,7 +957,7 @@
                     <bottom>0</bottom>
                     <unit>%</unit>
                 </tabRCAndroid>
-                <tablet_rc_android_override>false</tablet_rc_android_override>
+                <tablet_rc_android_override>true</tablet_rc_android_override>
                 <tabspaAndroid>
                     <left>0</left>
                     <right>0</right>

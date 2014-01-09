@@ -445,7 +445,7 @@
         <headerOverlap>false</headerOverlap>
         <c_isModal>false</c_isModal>
         <orientation>1</orientation>
-        <display_orientation>portrait</display_orientation>
+        <display_orientation>treeView</display_orientation>
         <itemSkinId>Skin Defaults</itemSkinId>
         <itemFocusSkinId>Skin Defaults</itemFocusSkinId>
         <parentOnLoadJS></parentOnLoadJS>
@@ -1591,13 +1591,13 @@
                 </symbian>
                 <symbian_override>true</symbian_override>
                 <tabRCAndroid>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <left>30</left>
+                    <right>30</right>
+                    <top>25</top>
+                    <bottom>1</bottom>
                     <unit>%</unit>
                 </tabRCAndroid>
-                <tablet_rc_android_override>false</tablet_rc_android_override>
+                <tablet_rc_android_override>true</tablet_rc_android_override>
                 <tabspaAndroid>
                     <left>0</left>
                     <right>0</right>
@@ -1860,11 +1860,11 @@
                 <tabRCAndroid>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>1</top>
+                    <bottom>1</bottom>
                     <unit>%</unit>
                 </tabRCAndroid>
-                <tablet_rc_android_override>false</tablet_rc_android_override>
+                <tablet_rc_android_override>true</tablet_rc_android_override>
                 <tabspaAndroid>
                     <left>0</left>
                     <right>0</right>
@@ -2791,7 +2791,7 @@
             <bb10_contentAlignment>4</bb10_contentAlignment>
         </children>
         <children xsi:type="khBox">
-            <ID>hbox144342718529133</ID>
+            <ID>hbxNote</ID>
             <gridMetaData>
                 <colSpan>1</colSpan>
                 <column>0</column>
@@ -2973,13 +2973,13 @@
                 </symbian>
                 <symbian_override>false</symbian_override>
                 <tabRCAndroid>
-                    <left>0</left>
+                    <left>1</left>
                     <right>0</right>
                     <top>0</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
                 </tabRCAndroid>
-                <tablet_rc_android_override>false</tablet_rc_android_override>
+                <tablet_rc_android_override>true</tablet_rc_android_override>
                 <tabspaAndroid>
                     <left>0</left>
                     <right>0</right>
@@ -3442,7 +3442,7 @@
             <desktop_hoverskin>Skin Defaults</desktop_hoverskin>
             <windows8_hoverskin>Skin Defaults</windows8_hoverskin>
             <children xsi:type="kLabel">
-                <ID>label144342718529134</ID>
+                <ID>lblNote</ID>
                 <gridMetaData>
                     <colSpan>1</colSpan>
                     <column>0</column>
@@ -3565,13 +3565,13 @@
                     </desktop_web>
                     <desktop_web_override>false</desktop_web_override>
                     <ipad>
-                        <left>0</left>
+                        <left>1</left>
                         <right>0</right>
                         <top>0</top>
                         <bottom>0</bottom>
                         <unit>%</unit>
                     </ipad>
-                    <ipad_override>false</ipad_override>
+                    <ipad_override>true</ipad_override>
                     <iphonerc>
                         <left>1</left>
                         <right>1</right>
@@ -3629,7 +3629,7 @@
                         <bottom>0</bottom>
                         <unit>%</unit>
                     </tabRCAndroid>
-                    <tablet_rc_android_override>false</tablet_rc_android_override>
+                    <tablet_rc_android_override>true</tablet_rc_android_override>
                     <tabspaAndroid>
                         <left>0</left>
                         <right>0</right>
@@ -3838,7 +3838,7 @@
                         <bottom>0</bottom>
                         <unit>%</unit>
                     </ipad>
-                    <ipad_override>false</ipad_override>
+                    <ipad_override>true</ipad_override>
                     <iphonerc>
                         <left>0</left>
                         <right>0</right>
@@ -3896,7 +3896,7 @@
                         <bottom>0</bottom>
                         <unit>%</unit>
                     </tabRCAndroid>
-                    <tablet_rc_android_override>false</tablet_rc_android_override>
+                    <tablet_rc_android_override>true</tablet_rc_android_override>
                     <tabspaAndroid>
                         <left>0</left>
                         <right>0</right>
@@ -4088,7 +4088,7 @@
                 <bb10_contentalignment>0</bb10_contentalignment>
             </children>
             <children xsi:type="kLabel">
-                <ID>label144342718529135</ID>
+                <ID>lblMsg</ID>
                 <gridMetaData>
                     <colSpan>1</colSpan>
                     <column>0</column>
@@ -4275,7 +4275,7 @@
                         <bottom>0</bottom>
                         <unit>%</unit>
                     </tabRCAndroid>
-                    <tablet_rc_android_override>false</tablet_rc_android_override>
+                    <tablet_rc_android_override>true</tablet_rc_android_override>
                     <tabspaAndroid>
                         <left>0</left>
                         <right>0</right>
@@ -4484,7 +4484,7 @@
                         <bottom>0</bottom>
                         <unit>%</unit>
                     </ipad>
-                    <ipad_override>false</ipad_override>
+                    <ipad_override>true</ipad_override>
                     <iphonerc>
                         <left>0</left>
                         <right>0</right>
@@ -4542,7 +4542,7 @@
                         <bottom>0</bottom>
                         <unit>%</unit>
                     </tabRCAndroid>
-                    <tablet_rc_android_override>false</tablet_rc_android_override>
+                    <tablet_rc_android_override>true</tablet_rc_android_override>
                     <tabspaAndroid>
                         <left>0</left>
                         <right>0</right>

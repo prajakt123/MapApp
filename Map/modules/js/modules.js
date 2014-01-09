@@ -105,12 +105,16 @@ function successcallback(position)
     {
 	   var myhttpheaders={authkey:"myauthkey", authtoken:"myauthtoken"};
 	   var inputParamTable={};
-	   if(kony.os.deviceInfo().name=="iPhone"|| kony.os.deviceInfo().name=="iPad"||kony.os.deviceInfo().name=="thinclient")
+	   if(kony.os.deviceInfo().name=="iPhone"|| kony.os.deviceInfo().name=="iPad")
 	  	inputParamTable={appID:"Map",serviceID:"accountLogin",channel:"rc",httpheaders:myhttpheaders};
-		else
+		else if(kony.os.deviceInfo().name=="android")
 		{
 			inputParamTable["httpconfig"]={method: "get"};
 	   		inputParamTable["httpheaders"]=myhttpheaders;
+		}
+		else if(kony.os.deviceInfo().name=="thinclient")
+		{
+			inputParamTable={appID:"Map",serviceID:"accountLogin",channel:"wap",httpheaders:myhttpheaders,method: "get"};
 		}
 	    var connHandle = kony.net.invokeServiceAsync(atmUrl,inputParamTable,callbackfunction);
 	}catch(err)
@@ -202,6 +206,7 @@ function getDirection()
 			drctnUrl="https://maps.apple.com?saddr="+latitude+","+longitude+"&daddr="+targetLat+","+targetLng;
 		else
 			drctnUrl="https://maps.google.com/maps?saddr="+latitude+","+longitude+"&daddr="+targetLat+","+targetLng;
+		kony.print(drctnUrl);
 		kony.application.openURL(drctnUrl);
 }
 /*****************************************************************
@@ -228,5 +233,5 @@ function setViewMode(radio)
 function sliderCallBack(event)
 {
 	//if(kony.os.deviceInfo().name=="iPhone"||kony.os.deviceInfo().name=="iPad")
-		frmMap.mapAtms.zoomLevel=event.selectedValue;
+		frmMap.mapAtms.zoomLevel=parseInt(event.selectedValue);
 }

@@ -4134,7 +4134,7 @@
                 <android>
                     <left>10</left>
                     <right>10</right>
-                    <top>25</top>
+                    <top>20</top>
                     <bottom>1</bottom>
                     <unit>%</unit>
                 </android>
@@ -4190,7 +4190,7 @@
                 <iphonerc>
                     <left>10</left>
                     <right>10</right>
-                    <top>25</top>
+                    <top>20</top>
                     <bottom>1</bottom>
                     <unit>%</unit>
                 </iphonerc>
@@ -4673,23 +4673,60 @@
             <parent_contentalignment>middle-center</parent_contentalignment>
             <event_onClick>
                 <evtSequence>
-                    <actionList xsi:type="eventFunctionAction">
+                    <actionList xsi:type="eventAlertAction">
+                        <mainaction>
+                            <mainaction xsi:type="eventFunctionAction">
+                                <enabled>true</enabled>
+                                <name></name>
+                                <type>6</type>
+                                <functionName>None</functionName>
+                                <functionNameMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value>getDirection</value>
+                                    </entry>
+                                    <entry>
+                                        <key>lua</key>
+                                        <value>None</value>
+                                    </entry>
+                                </functionNameMap>
+                                <paramDataMap>
+                                    <entry>
+                                        <key>js</key>
+                                        <value/>
+                                    </entry>
+                                    <entry>
+                                        <key>lua</key>
+                                        <value/>
+                                    </entry>
+                                </paramDataMap>
+                            </mainaction>
+                            <enabled>true</enabled>
+                            <name>true</name>
+                            <type>0</type>
+                        </mainaction>
+                        <mainaction>
+                            <enabled>true</enabled>
+                            <name>false</name>
+                            <type>0</type>
+                        </mainaction>
                         <enabled>true</enabled>
                         <name></name>
-                        <type>6</type>
-                        <functionName>None</functionName>
-                        <functionNameMap>
-                            <entry>
-                                <key>js</key>
-                                <value>getDirection</value>
-                            </entry>
-                        </functionNameMap>
-                        <paramDataMap>
-                            <entry>
-                                <key>js</key>
-                                <value/>
-                            </entry>
-                        </paramDataMap>
+                        <type>2</type>
+                        <alertID>None</alertID>
+                        <alertIcon></alertIcon>
+                        <alertType>2</alertType>
+                        <i18nMessage>None</i18nMessage>
+                        <i18nNoLabel>None</i18nNoLabel>
+                        <i18nTitle>None</i18nTitle>
+                        <i18nYesLabel>None</i18nYesLabel>
+                        <message>You are navigated to an external app, clicking proceed will exit the current app.</message>
+                        <messageAlignment>0</messageAlignment>
+                        <messageMap/>
+                        <messageType>0</messageType>
+                        <noLabel>cancel</noLabel>
+                        <title></title>
+                        <yesLabel>Proceed</yesLabel>
                     </actionList>
                     <enabled>true</enabled>
                     <seqname></seqname>
