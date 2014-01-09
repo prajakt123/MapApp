@@ -13,3 +13,4 @@ This app shows the nearby ATM locators showcasing the features of Kony map widge
 
 **Tablet** 
  * iPad
+ * Android
