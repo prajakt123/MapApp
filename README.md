@@ -9,8 +9,10 @@ This app shows the nearby ATM locators showcasing the features of Kony map widge
 # Supported platforms:
 **Mobile**
  * iPhone
- * android
+ * Android
+ * Windows Phone 7.5
+ * Windows Phone 8
 
 **Tablet** 
  * iPad
- * Android
+ * Android Tab
