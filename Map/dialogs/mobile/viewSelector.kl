@@ -853,10 +853,10 @@
                 </android>
                 <android_override>false</android_override>
                 <bb>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <left>1</left>
+                    <right>1</right>
+                    <top>1</top>
+                    <bottom>1</bottom>
                     <unit>%</unit>
                 </bb>
                 <bb10>
@@ -867,7 +867,7 @@
                     <unit>%</unit>
                 </bb10>
                 <bb10_override>false</bb10_override>
-                <bb_override>false</bb_override>
+                <bb_override>true</bb_override>
                 <default_override>true</default_override>
                 <defaults>
                     <left>0</left>
@@ -1122,8 +1122,8 @@
                 <bb>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>1</top>
+                    <bottom>1</bottom>
                     <unit>%</unit>
                 </bb>
                 <bb10>
@@ -1134,7 +1134,7 @@
                     <unit>%</unit>
                 </bb10>
                 <bb10_override>false</bb10_override>
-                <bb_override>false</bb_override>
+                <bb_override>true</bb_override>
                 <default_override>true</default_override>
                 <defaults>
                     <left>0</left>
@@ -1401,7 +1401,7 @@
                 <choices>
                     <name>3</name>
                     <value>Earth mode</value>
-                    <selected>true</selected>
+                    <selected>false</selected>
                     <i18key></i18key>
                 </choices>
                 <segData/>

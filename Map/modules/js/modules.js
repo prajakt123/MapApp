@@ -204,8 +204,13 @@ function getDirection()
 		var drctnUrl;
 		if(kony.os.deviceInfo().name=="iPhone"||kony.os.deviceInfo().name=="iPad")
 			drctnUrl="https://maps.apple.com?saddr="+latitude+","+longitude+"&daddr="+targetLat+","+targetLng;
-		else
+		else if(kony.os.deviceInfo().name=="android")
 			drctnUrl="https://maps.google.com/maps?saddr="+latitude+","+longitude+"&daddr="+targetLat+","+targetLng;
+		 if(kony.os.deviceInfo().name=="WindowsPhone")
+			{
+				drctnUrl="https://map.bing.com/maps/default.aspx?v=2&rtp=pos."+latitude+"_"+longitude+"~pos."+targetLat+"_"+targetLng+"&rtop=0~1~0";
+				//drctnUrl="bingmaps:?rtp=pos."+latitude+"_"+longitude+"~pos."+targetLat+"_"+targetLng+"&rtop=0~1~0";
+			}
 		kony.print(drctnUrl);
 		kony.application.openURL(drctnUrl);
 }

@@ -440,7 +440,7 @@
                 <seqname></seqname>
             </evtSequence>
         </onOrientationChange>
-        <titlebar>true</titlebar>
+        <titlebar>false</titlebar>
         <footerOverlap>false</footerOverlap>
         <headerOverlap>false</headerOverlap>
         <c_isModal>false</c_isModal>
@@ -608,7 +608,7 @@
         <bb_orientation>0</bb_orientation>
         <blackberry_no_of_items>0</blackberry_no_of_items>
         <bb_titleskinId>Skin Defaults</bb_titleskinId>
-        <bbTitlebar>true</bbTitlebar>
+        <bbTitlebar>false</bbTitlebar>
         <BBSkinAroundPopup>Skin Defaults</BBSkinAroundPopup>
         <autofocus>true</autofocus>
         <j2me_undockappfooter>false</j2me_undockappfooter>
@@ -2198,7 +2198,7 @@
                     </android>
                     <android_override>true</android_override>
                     <bb>
-                        <left>0</left>
+                        <left>20</left>
                         <right>0</right>
                         <top>0</top>
                         <bottom>0</bottom>
@@ -2212,7 +2212,7 @@
                         <unit>%</unit>
                     </bb10>
                     <bb10_override>false</bb10_override>
-                    <bb_override>false</bb_override>
+                    <bb_override>true</bb_override>
                     <default_override>true</default_override>
                     <defaults>
                         <left>0</left>
@@ -2335,7 +2335,7 @@
                     </windows8>
                     <windows8_override>true</windows8_override>
                     <winmobile>
-                        <left>1</left>
+                        <left>24</left>
                         <right>1</right>
                         <top>1</top>
                         <bottom>1</bottom>
@@ -2351,7 +2351,7 @@
                     <winmobile6x_override>true</winmobile6x_override>
                     <winmobile_override>true</winmobile_override>
                     <winphone8>
-                        <left>1</left>
+                        <left>24</left>
                         <right>1</right>
                         <top>1</top>
                         <bottom>1</bottom>
@@ -2616,7 +2616,7 @@
                         <unit>%</unit>
                     </winmobile6x>
                     <winmobile6x_override>false</winmobile6x_override>
-                    <winmobile_override>false</winmobile_override>
+                    <winmobile_override>true</winmobile_override>
                     <winphone8>
                         <left>0</left>
                         <right>0</right>
@@ -2624,7 +2624,7 @@
                         <bottom>0</bottom>
                         <unit>%</unit>
                     </winphone8>
-                    <winphone8_override>false</winphone8_override>
+                    <winphone8_override>true</winphone8_override>
                     <xhtmlAdvBB>
                         <left>0</left>
                         <right>0</right>
@@ -2732,6 +2732,8 @@
                 <parent_wrapping>word</parent_wrapping>
                 <parent_longText>false</parent_longText>
                 <parent_renderAsAnchor>false</parent_renderAsAnchor>
+                <overrideProperties>KLabel.winmobileContentAlign</overrideProperties>
+                <overrideProperties>KLabel.winphone8_contentalign</overrideProperties>
                 <iphone_wrapping>0</iphone_wrapping>
                 <iphone_contentAlignment>0</iphone_contentAlignment>
                 <iphone_longtext>false</iphone_longtext>
@@ -2858,7 +2860,7 @@
                         <unit>%</unit>
                     </bb10>
                     <bb10_override>false</bb10_override>
-                    <bb_override>false</bb_override>
+                    <bb_override>true</bb_override>
                     <default_override>true</default_override>
                     <defaults>
                         <left>0</left>
@@ -2982,9 +2984,9 @@
                     <windows8_override>true</windows8_override>
                     <winmobile>
                         <left>1</left>
-                        <right>1</right>
+                        <right>0</right>
                         <top>1</top>
-                        <bottom>1</bottom>
+                        <bottom>0</bottom>
                         <unit>px</unit>
                     </winmobile>
                     <winmobile6x>
@@ -2998,9 +3000,9 @@
                     <winmobile_override>true</winmobile_override>
                     <winphone8>
                         <left>1</left>
-                        <right>1</right>
+                        <right>0</right>
                         <top>1</top>
-                        <bottom>1</bottom>
+                        <bottom>0</bottom>
                         <unit>px</unit>
                     </winphone8>
                     <winphone8_override>true</winphone8_override>
@@ -3111,7 +3113,7 @@
                     </android>
                     <android_override>true</android_override>
                     <bb>
-                        <left>0</left>
+                        <left>5</left>
                         <right>0</right>
                         <top>0</top>
                         <bottom>0</bottom>
@@ -3125,7 +3127,7 @@
                         <unit>%</unit>
                     </bb10>
                     <bb10_override>false</bb10_override>
-                    <bb_override>false</bb_override>
+                    <bb_override>true</bb_override>
                     <default_override>true</default_override>
                     <defaults>
                         <left>0</left>
@@ -3262,7 +3264,7 @@
                         <unit>%</unit>
                     </winmobile6x>
                     <winmobile6x_override>false</winmobile6x_override>
-                    <winmobile_override>false</winmobile_override>
+                    <winmobile_override>true</winmobile_override>
                     <winphone8>
                         <left>0</left>
                         <right>0</right>
@@ -3270,7 +3272,7 @@
                         <bottom>0</bottom>
                         <unit>%</unit>
                     </winphone8>
-                    <winphone8_override>false</winphone8_override>
+                    <winphone8_override>true</winphone8_override>
                     <xhtmlAdvBB>
                         <left>0</left>
                         <right>0</right>
@@ -3491,11 +3493,11 @@
             </location>
             <size>
                 <width>448</width>
-                <height>157</height>
+                <height>90</height>
             </size>
             <sizePercent>
                 <width>100</width>
-                <height>35</height>
+                <height>20</height>
             </sizePercent>
             <skinId>Skin Defaults</skinId>
             <focusSkinId>Skin Defaults</focusSkinId>
@@ -3554,10 +3556,10 @@
                 </android>
                 <android_override>false</android_override>
                 <bb>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <left>1</left>
+                    <right>1</right>
+                    <top>1</top>
+                    <bottom>1</bottom>
                     <unit>%</unit>
                 </bb>
                 <bb10>
@@ -3568,7 +3570,7 @@
                     <unit>%</unit>
                 </bb10>
                 <bb10_override>false</bb10_override>
-                <bb_override>false</bb_override>
+                <bb_override>true</bb_override>
                 <default_override>true</default_override>
                 <defaults>
                     <left>0</left>
@@ -3691,7 +3693,7 @@
                 </windows8>
                 <windows8_override>false</windows8_override>
                 <winmobile>
-                    <left>0</left>
+                    <left>24</left>
                     <right>0</right>
                     <top>0</top>
                     <bottom>0</bottom>
@@ -3705,15 +3707,15 @@
                     <unit>px</unit>
                 </winmobile6x>
                 <winmobile6x_override>false</winmobile6x_override>
-                <winmobile_override>false</winmobile_override>
+                <winmobile_override>true</winmobile_override>
                 <winphone8>
-                    <left>0</left>
+                    <left>24</left>
                     <right>0</right>
                     <top>0</top>
                     <bottom>0</bottom>
                     <unit>px</unit>
                 </winphone8>
-                <winphone8_override>false</winphone8_override>
+                <winphone8_override>true</winphone8_override>
                 <xhtmlAdvBB>
                     <left>0</left>
                     <right>0</right>
@@ -4081,6 +4083,8 @@
             <direction>0</direction>
             <usePercent>true</usePercent>
             <orientation>constants.BOX_LAYOUT_HORIZONTAL</orientation>
+            <overrideProperties>KHBox.winmobile_position</overrideProperties>
+            <overrideProperties>KHBox.winphone8_position</overrideProperties>
             <position>1</position>
             <widgetLayoutDirection>BOX_LAYOUT_ALIGN_FROM_LEFT</widgetLayoutDirection>
             <overridePerferred>
@@ -4098,7 +4102,7 @@
             <bb10_position>0</bb10_position>
             <j2me_position>0</j2me_position>
             <android_position>0</android_position>
-            <wm_position>0</wm_position>
+            <wm_position>1</wm_position>
             <wm_derive_height>false</wm_derive_height>
             <wm6x_position>0</wm6x_position>
             <gridviewConfig>
@@ -4142,7 +4146,7 @@
                 </location>
                 <size>
                     <width>446</width>
-                    <height>155</height>
+                    <height>88</height>
                 </size>
                 <sizePercent>
                     <width>100</width>
@@ -4780,7 +4784,7 @@
                     </size>
                     <sizePercent>
                         <width>100</width>
-                        <height>13</height>
+                        <height>23</height>
                     </sizePercent>
                     <skinId>Skin Defaults</skinId>
                     <focusSkinId>Skin Defaults</focusSkinId>
@@ -4841,8 +4845,8 @@
                         <bb>
                             <left>0</left>
                             <right>0</right>
-                            <top>0</top>
-                            <bottom>0</bottom>
+                            <top>1</top>
+                            <bottom>1</bottom>
                             <unit>%</unit>
                         </bb>
                         <bb10>
@@ -4853,7 +4857,7 @@
                             <unit>%</unit>
                         </bb10>
                         <bb10_override>false</bb10_override>
-                        <bb_override>false</bb_override>
+                        <bb_override>true</bb_override>
                         <default_override>true</default_override>
                         <defaults>
                             <left>0</left>
@@ -5426,7 +5430,7 @@
                     </size>
                     <sizePercent>
                         <width>100</width>
-                        <height>15</height>
+                        <height>26</height>
                     </sizePercent>
                     <skinId>Skin Defaults</skinId>
                     <focusSkinId>Skin Defaults</focusSkinId>
@@ -5487,8 +5491,8 @@
                         <bb>
                             <left>0</left>
                             <right>0</right>
-                            <top>0</top>
-                            <bottom>0</bottom>
+                            <top>2</top>
+                            <bottom>2</bottom>
                             <unit>%</unit>
                         </bb>
                         <bb10>
@@ -5499,7 +5503,7 @@
                             <unit>%</unit>
                         </bb10>
                         <bb10_override>false</bb10_override>
-                        <bb_override>false</bb_override>
+                        <bb_override>true</bb_override>
                         <default_override>true</default_override>
                         <defaults>
                             <left>0</left>
@@ -6017,7 +6021,7 @@
                     <contentAlign>4</contentAlign>
                     <min>0</min>
                     <max>28</max>
-                    <defaultValue></defaultValue>
+                    <defaultValue>10</defaultValue>
                     <step>1</step>
                     <event_onSlide>
                         <evtSequence>
@@ -6074,6 +6078,8 @@
                     <parent_FocusThumbImg></parent_FocusThumbImg>
                     <overrideProperties>KSlider.androidMaxSkin</overrideProperties>
                     <overrideProperties>KSlider.androidMinSkin</overrideProperties>
+                    <overrideProperties>KSlider.bbLeftSkin</overrideProperties>
+                    <overrideProperties>KSlider.bbRightSkin</overrideProperties>
                     <parentThickness></parentThickness>
                     <parentMinLabel>0</parentMinLabel>
                     <parentMaxLabel>28</parentMaxLabel>
@@ -6091,8 +6097,8 @@
                     <ipadMinImg></ipadMinImg>
                     <ipadRightSkin>Skin Defaults</ipadRightSkin>
                     <ipadThumbImg></ipadThumbImg>
-                    <bbLeftSkin>Skin Defaults</bbLeftSkin>
-                    <bbRightSkin>Skin Defaults</bbRightSkin>
+                    <bbLeftSkin>sknSliderKonyThemeLeft</bbLeftSkin>
+                    <bbRightSkin>sknSliderKonyThemeRight</bbRightSkin>
                     <bbThumbImg></bbThumbImg>
                     <bbFocusThumbImg></bbFocusThumbImg>
                     <bbThickness></bbThickness>
@@ -6170,7 +6176,7 @@
                     </size>
                     <sizePercent>
                         <width>100</width>
-                        <height>17</height>
+                        <height>31</height>
                     </sizePercent>
                     <skinId>Skin Defaults</skinId>
                     <focusSkinId>Skin Defaults</focusSkinId>
@@ -6231,8 +6237,8 @@
                         <bb>
                             <left>0</left>
                             <right>0</right>
-                            <top>0</top>
-                            <bottom>0</bottom>
+                            <top>1</top>
+                            <bottom>1</bottom>
                             <unit>%</unit>
                         </bb>
                         <bb10>
@@ -6243,7 +6249,7 @@
                             <unit>%</unit>
                         </bb10>
                         <bb10_override>false</bb10_override>
-                        <bb_override>false</bb_override>
+                        <bb_override>true</bb_override>
                         <default_override>true</default_override>
                         <defaults>
                             <left>0</left>
@@ -6806,7 +6812,7 @@
                     <seqname></seqname>
                 </evtSequence>
             </desktopweb_onRightClick>
-            <winphone8_position>0</winphone8_position>
+            <winphone8_position>1</winphone8_position>
         </children>
         <children xsi:type="kMap">
             <ID>mapAtms</ID>
@@ -6824,16 +6830,16 @@
             <widgetID>p2kwiet237135440431</widgetID>
             <createdGAVersion>5.5.0</createdGAVersion>
             <location>
-                <x>1</x>
-                <y>201</y>
+                <x>2</x>
+                <y>123</y>
             </location>
             <size>
                 <width>448</width>
-                <height>248</height>
+                <height>326</height>
             </size>
             <sizePercent>
                 <width>100</width>
-                <height>56</height>
+                <height>73</height>
             </sizePercent>
             <skinId>Skin Defaults</skinId>
             <focusSkinId>Skin Defaults</focusSkinId>
@@ -7485,6 +7491,7 @@
             <overrideProperties>KMap.iphone_zoomlevel</overrideProperties>
             <overrideProperties>KMap.windows8_zoomlevel</overrideProperties>
             <overrideProperties>KMap.winphone7_zoomlevel</overrideProperties>
+            <overrideProperties>KMap.winphone8_view</overrideProperties>
             <overrideProperties>KMap.winphone8_zoomlevel</overrideProperties>
             <zoomlevel>14</zoomlevel>
             <parent_mapMode>0</parent_mapMode>
@@ -7669,12 +7676,13 @@
             <pbHeight>0</pbHeight>
             <calloutTemplate>None</calloutTemplate>
             <winphone8_view>0</winphone8_view>
-            <winphone7_zoomlevel>0</winphone7_zoomlevel>
-            <winphone8_zoomlevel>0</winphone8_zoomlevel>
+            <winphone7_zoomlevel>13</winphone7_zoomlevel>
+            <winphone8_zoomlevel>13</winphone8_zoomlevel>
             <windows8_zoomlevel>2</windows8_zoomlevel>
             <calloutWidth>80</calloutWidth>
         </children>
         <overrideProperties>KForm.androidtitleBar</overrideProperties>
+        <overrideProperties>KForm.bbTitleBar</overrideProperties>
         <overrideProperties>KForm.iphonetitleBar</overrideProperties>
         <winphone8_intransition>Default</winphone8_intransition>
         <winphone8_outtransition>Default</winphone8_outtransition>

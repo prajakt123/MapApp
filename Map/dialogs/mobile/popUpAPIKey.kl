@@ -4065,7 +4065,7 @@
             </desktopweb_onRightClick>
             <winphone8_position>0</winphone8_position>
         </children>
-        <winphone8_intransition>Default</winphone8_intransition>
+        <winphone8_intransition>Slide</winphone8_intransition>
         <winphone8_outtransition>Default</winphone8_outtransition>
         <winphone8_intransitionmode>Default</winphone8_intransitionmode>
         <winphone8_outtransitionmode>Default</winphone8_outtransitionmode>
