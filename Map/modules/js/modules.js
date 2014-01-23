@@ -187,12 +187,18 @@ function getAtms()
 ******************************************************************/
 function onSelectionCallBack(locations)
 {
-	targetLat=locations["lat"].toString();
-	targetLng=locations["lon"].toString();
-	kony.print("targetLat:"+targetLat+"targetLng:"+targetLng);
-	frmDetails.lblAtmName.text=locations["name"].toString();
-	frmDetails.lblAtmAddress.text=locations["desc"].toString();
-	frmDetails.show();
+	//#ifdef bb
+		
+	//#else
+		targetLat=locations["lat"].toString();
+		targetLng=locations["lon"].toString();
+		kony.print("targetLat:"+targetLat+"targetLng:"+targetLng);
+		frmDetails.lblAtmName.text=locations["name"].toString();
+		frmDetails.lblAtmAddress.text=locations["desc"].toString();
+		frmDetails.show();
+	//#endif
+	
+	
 }
 /*****************************************************************
 * Name    : getDirection
