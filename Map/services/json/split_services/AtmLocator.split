@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pxsObject>
+    <appSmsCode></appSmsCode>
+    <plainxmlservice>
+        <authenticationMode>basic</authenticationMode>
+        <cacheduration></cacheduration>
+        <cacheable>false</cacheable>
+        <dataprovider></dataprovider>
+        <dcResponse/>
+        <encryptPwd>true</encryptPwd>
+        <escapeXML>false</escapeXML>
+        <group>other</group>
+        <httpmethod>GET</httpmethod>
+        <id>AtmLocator</id>
+        <ignoreProxy>false</ignoreProxy>
+        <inparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>loc</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source></source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>-33.8670522,151.1957362</testvalue>
+            <value></value>
+        </inparam>
+        <intemplate></intemplate>
+        <ntlmDomain></ntlmDomain>
+        <ntlmHost></ntlmHost>
+        <outtemplate>{
+   "html_attributions": [],
+   "results": [
+      {
+         "geometry": {"location": {
+            "lat": -33.871155,
+            "lng": 151.198611
+         }},
+         "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id": "aeaaa29431df9f9f3363747c5b391d6973cb9343",
+         "name": "CBA ATM",
+         "reference": "CnRqAAAA-1QeeRll-YxgoVKRHaX7V2Q_q1ZAoGz1Yjc7g_WE1y1EjIg6ELUL1KxEReENFjz5KVmi-SpbC2A9_ZOrLvOxA8OhtO9cP3yqLt88GRxZV9lxRdlBWJtaiMtOqpA3O1RL1qQfgbamQXKOD_QJg-4zdhIQH71113ESvwavwOwCX0SiPBoUuFl7Y7nPnVk7caohZCMpVRwBHE4",
+         "types": [
+            "atm",
+            "finance",
+            "establishment"
+         ],
+         "vicinity": "31 Wheat Rd, Darling Harbour"
+      },
+      {
+         "geometry": {"location": {
+            "lat": -33.869394,
+            "lng": 151.194069
+         }},
+         "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id": "6c49664eae2fd39063c4c4c163f94e60c52deab3",
+         "name": "CBA ATM",
+         "reference": "CnRqAAAAL4e3l3_CbnhcoJEUr_9H80eq4cxQ_l9jgYtrarwiQmL3oeV6b1Pf7YRi0_Cy_wilgvRfqhDsrxUdmqC4K2t_DrkHvO-8Qaq38exo4faBOrqjYDMjghwq57iplC5hxw1hOlu0c-Y3wgO6Fvpg8LB_vxIQFzLiGTa7N2kgikOlnjZ2jRoUlvDTnHwE42IbesI7W285KsnnhFQ",
+         "types": [
+            "atm",
+            "finance",
+            "establishment"
+         ],
+         "vicinity": "2 Union St, Pyrmont"
+      }
+   ],
+   "status": "OK"
+}</outtemplate>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>results</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>//results</source>
+            <srcformatvalue></srcformatvalue>
+            <target>response</target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value></value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>lat</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>geometry/location/lat</source>
+            <srcformatvalue></srcformatvalue>
+            <target>response</target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value>results</value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>lng</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>geometry/location/lng</source>
+            <srcformatvalue></srcformatvalue>
+            <target>response</target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value>results</value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>name</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>name</source>
+            <srcformatvalue></srcformatvalue>
+            <target>response</target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value>results</value>
+        </outparam>
+        <outparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>vicinity</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source>vicinity</source>
+            <srcformatvalue></srcformatvalue>
+            <target>response</target>
+            <targetdatatype></targetdatatype>
+            <testvalue></testvalue>
+            <value>results</value>
+        </outparam>
+        <password></password>
+        <postclassname></postclassname>
+        <preclassname></preclassname>
+        <proxyname></proxyname>
+        <proxyport></proxyport>
+        <proxypwd></proxypwd>
+        <proxyuserid></proxyuserid>
+        <responseencoding>UTF-8</responseencoding>
+        <smscode></smscode>
+        <smsenabled>false</smsenabled>
+        <timeout></timeout>
+        <url>https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=$loc&amp;radius=500&amp;types=atm&amp;sensor=false&amp;key=AIzaSyDg1m_croyAxo67tRJSEEClBIwDUM_qUio</url>
+        <urlprovider></urlprovider>
+        <userid></userid>
+    </plainxmlservice>
+</pxsObject>

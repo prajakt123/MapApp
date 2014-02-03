@@ -114,7 +114,9 @@ function successcallback(position)
 		}
 		else if(kony.os.deviceInfo().name=="thinclient")
 		{
-			inputParamTable={appID:"Map",serviceID:"accountLogin",channel:"wap",httpheaders:myhttpheaders,method: "get"};
+			inputParamTable={appID:"Map",serviceID:"AtmLocator",channel:"wap",httpheaders:myhttpheaders,method: "get"};
+			inputParamTable["loc"]=latitude+","+longitude;
+			atmUrl=appConfig.url;
 		}
 	    var connHandle = kony.net.invokeServiceAsync(atmUrl,inputParamTable,callbackfunction);
 	}catch(err)
@@ -139,8 +141,26 @@ function callbackfunction(status, resulttable)
             kony.application.dismissLoadingScreen();
             return;
         }
+       // alert(JSON.stringify(resulttable["results"]));
 		locationList= new Array();
     	var len=resulttable["results"].length;
+    	//alert(len);
+    	if(kony.os.deviceInfo().name=="thinclient")
+    	{
+    		for(i=0;i<len;i++)
+    		{
+    			var location=new Object();
+    			location={	"lat":resulttable["results"][i]["lat"].toString(),
+    						"lon":resulttable["results"][i]["lng"].toString(),
+    						"image":"atm.png",
+    						"name":resulttable["results"][i]["name"].toString(),
+    						"desc":resulttable["results"][i]["vicinity"].toString(),
+    						//"calloutData": {"key1":resulttable["results"][i]["name"].toString(),"key2":resulttable["results"][i]["vicinity"].toString()},
+    						"showcallout":true};
+    			//alert(JSON.stringify(location));
+    			locationList.push(location);
+    		}
+    	}else
     	for(i=0;i<len;i++)
     	{
     		var location=new Object();
@@ -151,15 +171,19 @@ function callbackfunction(status, resulttable)
     					"desc":resulttable["results"][i]["vicinity"].toString(),
     					//"calloutData": {"key1":resulttable["results"][i]["name"].toString(),"key2":resulttable["results"][i]["vicinity"].toString()},
     					"showcallout":true};
-    		locationList.push(location);
+    					//alert(JSON.stringify(location));
+    					locationList.push(location);
     	}
     	var location=new Object();
     	location={"lat":latitude.toString(),"lon":longitude.toString(),"image":"pin.png","name":"current position","desc":" ","showcallout":true};
     	locationList.push(location);
     	//frmMap.mapAtms.widgetDataMapForCallout={lblName:"key1",lblAddress:"key2"};
+		//alert(JSON.stringify(locationList));
     	frmMap.mapAtms.locationData=locationList;
-    	kony.application.dismissLoadingScreen();
+    	//testMap.map2.locationData=location;
     	frmMap.show();
+    	kony.application.dismissLoadingScreen();
+		//testMap.show();
     }
 }
 /*****************************************************************

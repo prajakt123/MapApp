@@ -7486,7 +7486,7 @@
             <provider>0</provider>
             <mode></mode>
             <defaultPinImageText>default:pin.png</defaultPinImageText>
-            <_screenLevelWidget>true</_screenLevelWidget>
+            <_screenLevelWidget>false</_screenLevelWidget>
             <overrideProperties>KMap.android_zoomlevel</overrideProperties>
             <overrideProperties>KMap.iphone_zoomlevel</overrideProperties>
             <overrideProperties>KMap.windows8_zoomlevel</overrideProperties>
