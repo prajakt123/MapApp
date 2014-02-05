@@ -2,7 +2,7 @@
     <attributes name="applogokey" value="0=icon.png,1=,8=,2=,46=,42=,3=,16=,18=,43=,1000=,1001=,1002=,21="/>
     <attributes name="androidmapkey2" value="AIzaSyCde_q2PTm74I2xYOBoCc-SZSIbmaEurDo"/>
     <attributes name="ACCESS_WIFI_STATE" value="true"/>
-    <attributes name="mwaddrkey" value="10.10.12.33"/>
+    <attributes name="mwaddrkey" value="10.10.12.56"/>
     <attributes name="portkey" value=""/>
     <attributes name="INTERNAL_SYSTEM_WINDOW" value="false"/>
     <attributes name="WRITE_SETTINGS" value="false"/>
@@ -208,7 +208,7 @@
     <attributes name="tcphoneformatindicator" value="false"/>
     <attributes name="Location" value="true"/>
     <attributes name="ACCESS_SURFACE_FLINGER" value="false"/>
-    <attributes name="currentgaversion" value="5.5.41.QA_v201401291453_r3"/>
+    <attributes name="currentgaversion" value="5.5.41.QA_v201402031852_r4"/>
     <attributes name="mwhttpsportkey" value=""/>
     <attributes name="pathkey" value=""/>
     <attributes name="vendornamekey" value="KonyLabs"/>

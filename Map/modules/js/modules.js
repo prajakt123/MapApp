@@ -242,6 +242,16 @@ function getDirection()
 				drctnUrl="https://map.bing.com/maps/default.aspx?v=2&rtp=pos."+latitude+"_"+longitude+"~pos."+targetLat+"_"+targetLng+"&rtop=0~1~0";
 				//drctnUrl="bingmaps:?rtp=pos."+latitude+"_"+longitude+"~pos."+targetLat+"_"+targetLng+"&rtop=0~1~0";
 			}
+		//#ifdef spaan
+			drctnUrl="https://maps.google.com/maps?saddr="+latitude+","+longitude+"&daddr="+targetLat+","+targetLng;
+		//#else
+			
+		//#endif
+		//#ifdef spaip
+			drctnUrl="https://maps.apple.com?saddr="+latitude+","+longitude+"&daddr="+targetLat+","+targetLng;
+		//#else
+			
+		//#endif
 		kony.print(drctnUrl);
 		kony.application.openURL(drctnUrl);
 }

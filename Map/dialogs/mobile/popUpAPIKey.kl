@@ -791,8 +791,8 @@
                 <width>100</width>
                 <height>61</height>
             </sizePercent>
-            <skinId>Skin Defaults</skinId>
-            <focusSkinId>sknHbxGrayRoundedBorder</focusSkinId>
+            <skinId>sknHboxKonyThemeWhiteBG</skinId>
+            <focusSkinId>No Skin</focusSkinId>
             <localeId>None</localeId>
             <visible>true</visible>
             <rendererData>
@@ -3594,13 +3594,13 @@
                         </xhtmlAdvBB>
                         <xhtmlAdvBB_override>false</xhtmlAdvBB_override>
                         <spaAndroid>
-                            <left>0</left>
-                            <right>0</right>
-                            <top>0</top>
-                            <bottom>0</bottom>
+                            <left>10</left>
+                            <right>10</right>
+                            <top>5</top>
+                            <bottom>2</bottom>
                             <unit>%</unit>
                         </spaAndroid>
-                        <spaAndroid_override>false</spaAndroid_override>
+                        <spaAndroid_override>true</spaAndroid_override>
                         <spaBB>
                             <left>0</left>
                             <right>0</right>
@@ -3618,13 +3618,13 @@
                         <spaBBNth_override>false</spaBBNth_override>
                         <spaBB_override>false</spaBB_override>
                         <spaIphone>
-                            <left>0</left>
-                            <right>0</right>
-                            <top>0</top>
-                            <bottom>0</bottom>
+                            <left>10</left>
+                            <right>10</right>
+                            <top>5</top>
+                            <bottom>2</bottom>
                             <unit>%</unit>
                         </spaIphone>
-                        <spaIphone_override>false</spaIphone_override>
+                        <spaIphone_override>true</spaIphone_override>
                         <spaWindows>
                             <left>0</left>
                             <right>0</right>
