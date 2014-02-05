@@ -13,6 +13,8 @@ This app shows the nearby ATM locators showcasing the features of Kony map widge
  * BlackBerry
  * Windows Phone 7.5
  * Windows Phone 8
+ * SPA iPhone
+ * SPA android
 
 **Tablet** 
  * iPad
